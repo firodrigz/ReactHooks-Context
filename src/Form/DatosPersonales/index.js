@@ -35,8 +35,8 @@ const DatosPersonales = ({ updateStep }) => {
           const valid = validarNombre(value);
           setName({ value, valid })
         }}
-        error={name.valid == false}
-        helperText={name.valid == false && "Ingresa un nombre válido"}
+        error={name.valid === false}
+        helperText={name.valid === false && "Ingresa un nombre válido"}
       />
       <TextField
         label="Apellidos"
@@ -50,8 +50,8 @@ const DatosPersonales = ({ updateStep }) => {
           const valid = validarApellidos(value);
           setLastname({ value, valid })
         }}
-        error={lastname.valid == false}
-        helperText={lastname.valid == false && "Ingresa un apellido válido"}
+        error={lastname.valid === false}
+        helperText={lastname.valid === false && "Ingresa un apellido válido"}
       />
       <TextField
         label="Número telefónico"
@@ -66,8 +66,8 @@ const DatosPersonales = ({ updateStep }) => {
           const valid = validarTelefono(value);
           setPhone({ value, valid })
         }}
-        error={phone.valid == false}
-        helperText={phone.valid == false && "Ingresa un número de teléfono válido"}
+        error={phone.valid === false}
+        helperText={phone.valid === false && "Ingresa un número de teléfono válido"}
       />
       <Button variant="contained" type="submit">
         Siguiente
